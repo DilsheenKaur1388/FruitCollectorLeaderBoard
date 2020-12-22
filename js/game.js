@@ -21,8 +21,8 @@ class Game{
                 var playerCountRef = await database.ref('playerCount').once("value");
                 if (playerCountRef.exists()) {
                     playerCount = playerCountRef.val();
+                  }
                     player.getCount();
-                }
                 form = new Form()
                 form.display();
             }
